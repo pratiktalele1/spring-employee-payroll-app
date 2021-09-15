@@ -15,50 +15,60 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.bridgelabz.eps.dto.EmployeePayrollDTO;
+import com.bridgelabz.eps.dto.ResponseDTO;
+import com.bridgelabz.eps.model.EmployeeData;
 import com.bridgelabz.eps.model.EmployeePayroll;
 
 @RestController
 @RequestMapping("/service")
 public class EmployeePayrollController {
+
+//	creating list to store Employee data
+	private List<EmployeeData> datas = new ArrayList<EmployeeData>();
 	
-	private List<EmployeePayroll> list=new ArrayList<EmployeePayroll>();
-	private static AtomicLong atomicLong=new AtomicLong();
-	
+//	creating atomiclong for id
+	private static AtomicLong atomicLong = new AtomicLong();
+
 //	creating method for getting all data
 	@GetMapping
-	private ResponseEntity<List<EmployeePayroll>> getAll() {
-		return new ResponseEntity<>(list,HttpStatus.OK);
+	private ResponseEntity<List<EmployeeData>> getAll() {
+		return new ResponseEntity<>(datas, HttpStatus.OK);
 	}
-	
+
 //	creating method for creating data
 	@PostMapping
-	private ResponseEntity<EmployeePayroll> create(@RequestBody EmployeePayroll employeePayroll) {
-		employeePayroll.setId(atomicLong.incrementAndGet());
-		list.add(employeePayroll);
-		return new ResponseEntity<>(employeePayroll,HttpStatus.CREATED);
+	private ResponseEntity<ResponseDTO> create(@RequestBody EmployeePayrollDTO e) {
+		EmployeeData employeePayroll = new EmployeeData(atomicLong.incrementAndGet(), e);
+		ResponseDTO dto = new ResponseDTO("get call success", employeePayroll);
+		datas.add(employeePayroll);
+		return new ResponseEntity<>(dto, HttpStatus.CREATED);
 	}
-	
+
 //	creating method for getting data by id
 	@GetMapping("/{id}")
-	private ResponseEntity<EmployeePayroll> getById(@PathVariable int id){
-		EmployeePayroll payroll =list.stream().filter(e->e.getId()==id).findFirst().get();
-		return new ResponseEntity<>(payroll,HttpStatus.OK);
+	private ResponseEntity<ResponseDTO> getById(@PathVariable int id) {
+		EmployeeData payroll = datas.stream().filter(e -> e.getEmpId() == id).findFirst().get();
+		ResponseDTO dto = new ResponseDTO("get call success", payroll);
+		return new ResponseEntity<>(dto, HttpStatus.OK);
 	}
-	
+
 //	creating method for updating data by id
 	@PutMapping("/{id}")
-	private ResponseEntity<EmployeePayroll> updateById(@PathVariable int id,@RequestBody EmployeePayroll roll){
-		EmployeePayroll payroll=list.stream().filter(e->e.getId()==id).findFirst().get();
-		payroll.setFirstName(roll.getFirstName());
-		payroll.setLastName(roll.getLastName());
-		return new ResponseEntity<>(HttpStatus.FOUND);
+	private ResponseEntity<ResponseDTO> updateById(@PathVariable int id, @RequestBody EmployeePayrollDTO dto) {
+		EmployeeData data = datas.stream().filter(e -> e.getEmpId() == id).findFirst().get();
+		data.setName(dto.name);
+		data.setSalary(dto.salary);
+		ResponseDTO responseDto = new ResponseDTO("put call success", data);
+		return new ResponseEntity<>(responseDto, HttpStatus.FOUND);
 	}
-	
+
 //	creating method for deleting data by id
 	@DeleteMapping("/{id}")
-	private ResponseEntity<EmployeePayroll> deleteById(@PathVariable int id) {
-		EmployeePayroll payroll=list.stream().filter(e->e.getId()==id).findFirst().get();
-		list.remove(payroll);
-		return new ResponseEntity<>(payroll,HttpStatus.FOUND);
+	private ResponseEntity<ResponseDTO> deleteById(@PathVariable int id) {
+		EmployeeData data = datas.stream().filter(e -> e.getEmpId() == id).findFirst().get();
+		datas.remove(data);
+		ResponseDTO dto = new ResponseDTO("delete call success", data);
+		return new ResponseEntity<>(dto, HttpStatus.OK);
 	}
 }
