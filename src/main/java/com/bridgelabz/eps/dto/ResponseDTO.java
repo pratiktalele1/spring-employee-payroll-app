@@ -1,5 +1,6 @@
 package com.bridgelabz.eps.dto;
 
+//	ResponseDTO class to give response msg to the user 
 public class ResponseDTO {
 	private String message;
 	private Object data;

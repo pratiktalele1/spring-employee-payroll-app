@@ -22,47 +22,50 @@ import com.bridgelabz.eps.model.EmployeeData;
 import com.bridgelabz.eps.model.EmployeePayroll;
 import com.bridgelabz.eps.service.IEmployeePayroll;
 
+
 @RestController
 @RequestMapping("/service")
 public class EmployeePayrollController {
 
-//	asign service
+//	IEmployeePayroll is Autowired to call various functions from service layer
 	@Autowired
 	private IEmployeePayroll services;
 	
-//	creating list to store Employee data
+//	list is created to perform various HTTP CURD operations
 	private List<EmployeeData> datas = new ArrayList<EmployeeData>();
 	
-//	creating atomiclong for id
+//	atomiclong created to assign unique id to each payroll data
 	private static AtomicLong atomicLong = new AtomicLong();
 
-//	creating method for getting all data
+//	getAll() is created to get all payroll data from service layer using http get method
 	@GetMapping
 	private ResponseEntity<List<EmployeeData>> getAll() {
 		return new ResponseEntity<>(services.readAll(), HttpStatus.OK);
 	}
 
-//	creating method for creating data
+//	create() is created to save payroll data to service layer using http post method
 	@PostMapping
 	private ResponseEntity<ResponseDTO> create(@RequestBody EmployeePayrollDTO e) {
 		return new ResponseEntity<>(services.createEmployee(e), HttpStatus.CREATED);
 	}
 
-//	creating method for getting data by id
+//	getById() is created to get payroll data by id from service layer using http get method
 	@GetMapping("/{id}")
 	private ResponseEntity<ResponseDTO> getById(@PathVariable int id) {
 		return new ResponseEntity<>(services.getDataById(id), HttpStatus.FOUND);
 	}
 
-//	creating method for updating data by id
+//	updateById() is created to update payroll data by id from service layer using http put method
 	@PutMapping("/{id}")
 	private ResponseEntity<ResponseDTO> updateById(@PathVariable int id, @RequestBody EmployeePayrollDTO dto) {
 		return new ResponseEntity<>(services.updateDataById(id,dto), HttpStatus.FOUND);
 	}
 
-//	creating method for deleting data by id
+//	deleteById() is created to delete payroll data by id from service layer using http delete method
 	@DeleteMapping("/{id}")
 	private ResponseEntity<ResponseDTO> deleteById(@PathVariable int id) {
 		return new ResponseEntity<>(services.deleteDataById(id), HttpStatus.FOUND);
 	}
+	
+	
 }

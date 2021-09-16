@@ -1,12 +1,17 @@
 package com.bridgelabz.eps.model;
 
+
+
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.bridgelabz.eps.dto.EmployeePayrollDTO;
 
-
+@Entity
+@Table(name = "payroll")
 public class EmployeeData {
+	@Id
 	private long empId;
 	private String name;
 	private double salary;
@@ -15,6 +20,10 @@ public class EmployeeData {
 		this.empId=id;
 		this.name=dto.name;
 		this.salary=dto.salary;
+		
+	}
+	
+	public EmployeeData() {
 		
 	}
 	
