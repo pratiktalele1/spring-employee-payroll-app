@@ -65,6 +65,7 @@ public class EmployeePayrollController {
 	@DeleteMapping("/{id}")
 	private ResponseEntity<ResponseDTO> deleteById(@PathVariable int id) {
 		return new ResponseEntity<>(services.deleteDataById(id), HttpStatus.FOUND);
+	
 	}
 	
 	
