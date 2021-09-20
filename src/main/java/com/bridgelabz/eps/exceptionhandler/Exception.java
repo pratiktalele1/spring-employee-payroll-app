@@ -12,13 +12,9 @@ import com.bridgelabz.eps.dto.ResponseDTO;
 public class Exception extends RuntimeException {
 	
 	@ExceptionHandler(MethodArgumentNotValidException.class)
-	public void exception( ) {
-		System.out.println("exception in input ->");
+	public void exception() {
+		System.out.println("input invalid error");
 	}
 	
-	@ExceptionHandler(InputException.class)
-	public String InException() {
-		System.out.println("InException() function");
-		return "not found";
-	}
+
 }

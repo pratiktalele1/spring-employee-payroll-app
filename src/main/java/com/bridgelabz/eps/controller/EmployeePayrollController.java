@@ -55,14 +55,8 @@ public class EmployeePayrollController {
 //	create() is created to save payroll data to service layer using http post method
 	@PostMapping
 	private ResponseEntity<ResponseDTO> create(@Valid @RequestBody EmployeePayrollDTO e) {
-//		if(e.getName().isEmpty()) {
-//			throw new InputException();
-//		}else {
 			log.info("In the create() function to create data");
-			return new ResponseEntity<>(services.createEmployee(e), HttpStatus.CREATED);
-//		}
-		
-		
+			return new ResponseEntity<>(services.createEmployee(e), HttpStatus.CREATED);		
 	}
 
 //	getById() is created to get payroll data by id from service layer using http get method
