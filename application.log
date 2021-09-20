@@ -1322,3 +1322,313 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.
 2021-09-20 22:47:14.784 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:17] environment is ->StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[MapPropertySource {name='server.ports'}, ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, ServletContextPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/''}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application.properties]' via location 'optional:classpath:/''}, MapPropertySource {name='devtools'}]}
 2021-09-20 22:47:28.486 [INFO] [http-nio-8080-exec-2] [c.b.e.c.EmployeePayrollController:50] In the getAll() function to retrive all data
 2021-09-20 22:47:41.927 [WARN] [http-nio-8080-exec-3] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:207] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in private org.springframework.http.ResponseEntity<com.bridgelabz.eps.dto.ResponseDTO> com.bridgelabz.eps.controller.EmployeePayrollController.updateById(int,com.bridgelabz.eps.dto.EmployeePayrollDTO): [Field error in object 'employeePayrollDTO' on field 'name': rejected value []; codes [Pattern.employeePayrollDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeePayrollDTO.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@2d2a9a02,[A-Za-z]+]; default message [invalid user name]] ]
+2021-09-20 23:11:06.074 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 228 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:11:06.078 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:11:06.078 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:11:08.316 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:11:11.050 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:11:11.519 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:61] Started SpringEmployeePayrollServiceApplication in 6.15 seconds (JVM running for 7.864)
+2021-09-20 23:11:11.523 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:17] environment is ->StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[MapPropertySource {name='server.ports'}, ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, ServletContextPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/''}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application.properties]' via location 'optional:classpath:/''}, MapPropertySource {name='devtools'}]}
+2021-09-20 23:11:23.872 [WARN] [http-nio-8080-exec-1] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:207] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in private org.springframework.http.ResponseEntity<com.bridgelabz.eps.dto.ResponseDTO> com.bridgelabz.eps.controller.EmployeePayrollController.create(com.bridgelabz.eps.dto.EmployeePayrollDTO): [Field error in object 'employeePayrollDTO' on field 'name': rejected value []; codes [Pattern.employeePayrollDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeePayrollDTO.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@3fb2dd97,[A-Za-z]+]; default message [invalid user name]] ]
+2021-09-20 23:13:14.329 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 7856 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:13:14.334 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:13:14.335 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:13:16.587 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:13:19.324 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:13:19.875 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:61] Started SpringEmployeePayrollServiceApplication in 6.249 seconds (JVM running for 7.714)
+2021-09-20 23:13:19.879 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:17] environment is ->StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[MapPropertySource {name='server.ports'}, ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, ServletContextPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/''}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application.properties]' via location 'optional:classpath:/''}, MapPropertySource {name='devtools'}]}
+2021-09-20 23:13:24.038 [WARN] [http-nio-8080-exec-2] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:207] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in private org.springframework.http.ResponseEntity<com.bridgelabz.eps.dto.ResponseDTO> com.bridgelabz.eps.controller.EmployeePayrollController.create(com.bridgelabz.eps.dto.EmployeePayrollDTO): [Field error in object 'employeePayrollDTO' on field 'name': rejected value []; codes [Pattern.employeePayrollDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeePayrollDTO.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@3eb4c534,[A-Za-z]+]; default message [invalid user name]] ]
+2021-09-20 23:14:08.640 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 3800 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:14:08.645 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:14:08.646 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:14:10.886 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:14:13.617 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:14:14.081 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:61] Started SpringEmployeePayrollServiceApplication in 6.077 seconds (JVM running for 7.545)
+2021-09-20 23:14:14.086 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:17] environment is ->StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[MapPropertySource {name='server.ports'}, ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, ServletContextPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/''}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application.properties]' via location 'optional:classpath:/''}, MapPropertySource {name='devtools'}]}
+2021-09-20 23:14:18.569 [WARN] [http-nio-8080-exec-2] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:207] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in private org.springframework.http.ResponseEntity<com.bridgelabz.eps.dto.ResponseDTO> com.bridgelabz.eps.controller.EmployeePayrollController.create(com.bridgelabz.eps.dto.EmployeePayrollDTO): [Field error in object 'employeePayrollDTO' on field 'name': rejected value []; codes [Pattern.employeePayrollDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeePayrollDTO.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@38988608,[A-Za-z]+]; default message [invalid user name]] ]
+2021-09-20 23:24:51.646 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 16988 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:24:51.650 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:24:51.650 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:24:53.837 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:24:56.524 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:24:57.007 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:61] Started SpringEmployeePayrollServiceApplication in 5.993 seconds (JVM running for 7.419)
+2021-09-20 23:24:57.011 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:17] environment is ->StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[MapPropertySource {name='server.ports'}, ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, ServletContextPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/''}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application.properties]' via location 'optional:classpath:/''}, MapPropertySource {name='devtools'}]}
+2021-09-20 23:25:04.030 [INFO] [http-nio-8080-exec-2] [c.b.e.c.EmployeePayrollController:50] In the getAll() function to retrive all data
+2021-09-20 23:25:08.037 [INFO] [http-nio-8080-exec-3] [c.b.e.c.EmployeePayrollController:64] In the getById() function to retrive data by using Id
+2021-09-20 23:25:11.444 [INFO] [http-nio-8080-exec-4] [c.b.e.c.EmployeePayrollController:64] In the getById() function to retrive data by using Id
+2021-09-20 23:25:11.462 [ERROR] [http-nio-8080-exec-4] [o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.bridgelabz.eps.service.EmployeePayrollServiceImpl.getDataById(EmployeePayrollServiceImpl.java:45)
+	at com.bridgelabz.eps.controller.EmployeePayrollController.getById(EmployeePayrollController.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-09-20 23:33:51.168 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 13372 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:33:51.172 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:33:51.172 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:33:53.468 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:33:56.150 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:33:56.453 [WARN] [restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+2021-09-20 23:33:56.519 [ERROR] [restartedMain] [o.s.b.SpringApplication:860] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at com.bridgelabz.eps.SpringEmployeePayrollServiceApplication.main(SpringEmployeePayrollServiceApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.detectExceptionMappings(ExceptionHandlerMethodResolver.java:100)
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:77)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1090)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1032)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+2021-09-20 23:34:51.399 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 15956 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:34:51.403 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:34:51.403 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:34:53.617 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:34:56.301 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:34:56.610 [WARN] [restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+2021-09-20 23:34:56.671 [ERROR] [restartedMain] [o.s.b.SpringApplication:860] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at com.bridgelabz.eps.SpringEmployeePayrollServiceApplication.main(SpringEmployeePayrollServiceApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.detectExceptionMappings(ExceptionHandlerMethodResolver.java:100)
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:77)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1090)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1032)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+2021-09-20 23:35:25.056 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 7288 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:35:25.060 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:35:25.060 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:35:27.340 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:35:29.983 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:35:30.301 [WARN] [restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+2021-09-20 23:35:30.361 [ERROR] [restartedMain] [o.s.b.SpringApplication:860] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at com.bridgelabz.eps.SpringEmployeePayrollServiceApplication.main(SpringEmployeePayrollServiceApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.detectExceptionMappings(ExceptionHandlerMethodResolver.java:100)
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:77)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1090)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1032)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+2021-09-20 23:36:02.460 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 12888 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:36:02.464 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:36:02.464 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:36:04.661 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:36:07.748 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:36:08.052 [WARN] [restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+2021-09-20 23:36:08.114 [ERROR] [restartedMain] [o.s.b.SpringApplication:860] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at com.bridgelabz.eps.SpringEmployeePayrollServiceApplication.main(SpringEmployeePayrollServiceApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No exception types mapped to public com.bridgelabz.eps.dto.ResponseDTO com.bridgelabz.eps.exceptionhandler.Exception.idNotPresent()
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.detectExceptionMappings(ExceptionHandlerMethodResolver.java:100)
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:77)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1090)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1032)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+2021-09-20 23:36:41.247 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 3600 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:36:41.251 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:36:41.252 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:36:43.719 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:36:46.379 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:36:46.849 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:61] Started SpringEmployeePayrollServiceApplication in 6.334 seconds (JVM running for 7.957)
+2021-09-20 23:36:46.853 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:17] environment is ->StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[MapPropertySource {name='server.ports'}, ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, ServletContextPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/''}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application.properties]' via location 'optional:classpath:/''}, MapPropertySource {name='devtools'}]}
+2021-09-20 23:36:57.831 [WARN] [http-nio-8080-exec-1] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:207] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in private org.springframework.http.ResponseEntity<com.bridgelabz.eps.dto.ResponseDTO> com.bridgelabz.eps.controller.EmployeePayrollController.create(com.bridgelabz.eps.dto.EmployeePayrollDTO): [Field error in object 'employeePayrollDTO' on field 'name': rejected value []; codes [Pattern.employeePayrollDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeePayrollDTO.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@755ade15,[A-Za-z]+]; default message [invalid user name]] ]
+2021-09-20 23:58:39.491 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:55] Starting SpringEmployeePayrollServiceApplication using Java 16.0.1 on DESKTOP-8MCPAJB with PID 19268 (C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service\target\classes started by Pratik in C:\Users\Pratik\eclipse-workspace\spring-employee-payroll-service)
+2021-09-20 23:58:39.506 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:56] Running with Spring Boot v2.4.10, Spring v5.3.9
+2021-09-20 23:58:39.506 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:668] The following profiles are active: dev
+2021-09-20 23:58:41.807 [WARN] [restartedMain] [c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-09-20 23:58:44.559 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:221] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-20 23:58:45.087 [INFO] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:61] Started SpringEmployeePayrollServiceApplication in 6.245 seconds (JVM running for 7.711)
+2021-09-20 23:58:45.091 [DEBUG] [restartedMain] [c.b.e.SpringEmployeePayrollServiceApplication:17] environment is ->StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[MapPropertySource {name='server.ports'}, ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, ServletContextPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/''}, OriginTrackedMapPropertySource {name='Config resource 'class path resource [application.properties]' via location 'optional:classpath:/''}, MapPropertySource {name='devtools'}]}
+2021-09-20 23:59:01.547 [INFO] [http-nio-8080-exec-2] [c.b.e.c.EmployeePayrollController:64] In the getById() function to retrive data by using Id
+2021-09-20 23:59:01.925 [WARN] [http-nio-8080-exec-2] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:207] Resolved [java.util.NoSuchElementException: No value present]

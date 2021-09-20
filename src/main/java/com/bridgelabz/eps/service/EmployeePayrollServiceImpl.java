@@ -35,7 +35,6 @@ public class EmployeePayrollServiceImpl implements IEmployeePayroll {
 //	readAll() function to get payroll data
 	@Override
 	public List<EmployeeData> readAll() {
-//		return datas;
 		return employeePayrollRepository.findAll();
 	}
 
@@ -44,8 +43,11 @@ public class EmployeePayrollServiceImpl implements IEmployeePayroll {
 	public ResponseDTO getDataById(int id) {
 		List<EmployeeData> data= employeePayrollRepository.findAll();
 		EmployeeData payroll = data.stream().filter(e -> e.getEmpId() == id).findFirst().get();
-		ResponseDTO dto = new ResponseDTO("get call success", payroll);
-		return dto;
+//		if(payroll.getEmpId()==id) {
+			ResponseDTO dto = new ResponseDTO("get call success", payroll);
+			return dto;
+		
+		
 	}
 
 //	updateDataById() function to update payroll data by id

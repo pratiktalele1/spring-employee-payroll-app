@@ -5,7 +5,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 
 @Component
 public class InputException extends RuntimeException {
-	public InputException() {
+	public  InputException() {
 		
 	}
+	
 }
