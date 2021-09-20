@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bridgelabz.eps.dto.EmployeePayrollDTO;
 import com.bridgelabz.eps.dto.ResponseDTO;
+
 import com.bridgelabz.eps.model.EmployeeData;
 import com.bridgelabz.eps.model.EmployeePayroll;
 import com.bridgelabz.eps.service.IEmployeePayroll;
@@ -49,9 +53,9 @@ public class EmployeePayrollController {
 
 //	create() is created to save payroll data to service layer using http post method
 	@PostMapping
-	private ResponseEntity<ResponseDTO> create(@RequestBody EmployeePayrollDTO e) {
-		log.info("In the create() function to create data");
-		return new ResponseEntity<>(services.createEmployee(e), HttpStatus.CREATED);
+	private ResponseEntity<ResponseDTO> create(@Valid @RequestBody EmployeePayrollDTO e) {
+			log.info("In the create() function to create data");
+			return new ResponseEntity<>(services.createEmployee(e), HttpStatus.CREATED);		
 	}
 
 //	getById() is created to get payroll data by id from service layer using http get method
@@ -63,7 +67,7 @@ public class EmployeePayrollController {
 
 //	updateById() is created to update payroll data by id from service layer using http put method
 	@PutMapping("/{id}")
-	private ResponseEntity<ResponseDTO> updateById(@PathVariable int id, @RequestBody EmployeePayrollDTO dto) {
+	private ResponseEntity<ResponseDTO> updateById(@PathVariable int id,@Valid @RequestBody EmployeePayrollDTO dto) {
 		log.info("In the updateById() function to update data by using Id");
 		return new ResponseEntity<>(services.updateDataById(id,dto), HttpStatus.FOUND);
 	}
