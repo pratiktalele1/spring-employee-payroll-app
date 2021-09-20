@@ -5,6 +5,7 @@ package com.bridgelabz.eps.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Pattern;
 
 import com.bridgelabz.eps.dto.EmployeePayrollDTO;
 

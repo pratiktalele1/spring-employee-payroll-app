@@ -14,7 +14,8 @@ public class SpringEmployeePayrollServiceApplication {
 		ApplicationContext applicationContext= SpringApplication.run(SpringEmployeePayrollServiceApplication.class, args);
 		System.out.println("hello from employee payroll");
 		System.out.println("environment is ->"+applicationContext.getEnvironment());
-		log.debug("environment is ->"+applicationContext.getEnvironment());
+		log.info("environment is ->"+applicationContext.getEnvironment());
+		log.info("payroll user ->{}",System.getenv("empPayroll"));
 
 	}
 
